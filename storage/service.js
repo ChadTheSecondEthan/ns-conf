@@ -1,5 +1,5 @@
 import axios from "axios";
-import { AsyncStorage } from "@react-native-community/async-storage";
+import AsyncStorage from "@react-native-community/async-storage";
 import { apply, asyncPipe } from "../utils/pipe";
 
 // CONSTANTS
@@ -34,16 +34,18 @@ const setItemInStorage = (key, value) =>
   asyncPipe(
     value,
     JSON.stringify,
-    apply(key, AsyncStore.setItem),
+    apply(key, AsyncStorage.setItem),
     () => value || undefined
   );
 
-const fetchItem = (key) =>
+const fetchItem = (key) => {
+  console.log("The Server is still being used... oops");
   asyncPipe(
     axios.get(`http://ns-conf.lowrysoftware.com/api/2/${key}`),
     ({ data }) => data,
     apply(key, setItemInStorage)
   );
+};
 
 const shouldRefetch = (key) =>
   asyncPipe(
@@ -58,19 +60,18 @@ const shouldRefetch = (key) =>
       storageTimestamp < Math.max(1582844213530, timestamp)
   );
 
-const getItem = (key) =>
-  asyncPipe(
-    shouldRefetch(key),
-    (should) => (should ? fetchItem(key) : getItemFromStorage(key)),
-    apply(key, setItemInStorage),
-    ({ data }) => data
-  );
+// const getItem = (key) =>
+//   asyncPipe(
+//     shouldRefetch(key),
+//     (should) => (should ? fetchItem(key) : getItemFromStorage(key)),
+//     apply(key, setItemInStorage),
+//     ({ data }) => data
+//   );
 
 // ACTIONS
-
-export const getHomeLinks = () => getItem(keys.home);
-export const getFeedback = () => getItem(keys.feedback);
-export const getSchedule = () => getItem(keys.schedule);
+// export const getHomeLinks = () => getItem(keys.home);
+// export const getFeedback = () => getItem(keys.feedback);
+// export const getSchedule = () => getItem(keys.schedule);
 export const getSelections = () => getItemFromStorage(keys.selections);
 
 export const hashBreakout = ({ day, time } = {}) => `<${day}><${time}>`;
