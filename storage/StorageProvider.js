@@ -35,8 +35,6 @@ export default function StorageProvider({ children }) {
 
   const speakers = getSpeakersFromSchedule(schedule);
 
-  console.log(speakers);
-
   return loading ? null : (
     <StorageContext.Provider
       value={{

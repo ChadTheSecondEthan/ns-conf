@@ -1,4 +1,3 @@
-import axios from "axios";
 import AsyncStorage from "@react-native-community/async-storage";
 import { apply, asyncPipe } from "../utils/pipe";
 
@@ -17,7 +16,7 @@ Object.entries(keys).forEach(([key, value]) => {
 
 const validateKey = (key) => {
   if (key in keys) return key;
-  else throw new Error(`Invalid key: ${key}`);
+  throw new Error(`Invalid key: ${key}`);
 };
 
 // UTILS
@@ -38,27 +37,27 @@ const setItemInStorage = (key, value) =>
     () => value || undefined
   );
 
-const fetchItem = (key) => {
-  console.log("The Server is still being used... oops");
-  asyncPipe(
-    axios.get(`http://ns-conf.lowrysoftware.com/api/2/${key}`),
-    ({ data }) => data,
-    apply(key, setItemInStorage)
-  );
-};
+// const fetchItem = (key) => {
+//   console.log("The Server is still being used... oops");
+//   asyncPipe(
+//     axios.get(`http://ns-conf.lowrysoftware.com/api/2/${key}`),
+//     ({ data }) => data,
+//     apply(key, setItemInStorage)
+//   );
+// };
 
-const shouldRefetch = (key) =>
-  asyncPipe(
-    Promise.all([
-      // check timestamp in storage
-      getItemFromStorage(key),
-      // check timestamp of latest update
-      fetchItem(keys.timestamp),
-    ]),
-    // compare timestamps -- ignore anything that was before api version 2
-    ([{ timestamp: storageTimestamp = 0 } = {}, { timestamp = 1 } = {}]) =>
-      storageTimestamp < Math.max(1582844213530, timestamp)
-  );
+// const shouldRefetch = (key) =>
+//   asyncPipe(
+//     Promise.all([
+//       // check timestamp in storage
+//       getItemFromStorage(key),
+//       // check timestamp of latest update
+//       fetchItem(keys.timestamp),
+//     ]),
+//     // compare timestamps -- ignore anything that was before api version 2
+//     ([{ timestamp: storageTimestamp = 0 } = {}, { timestamp = 1 } = {}]) =>
+//       storageTimestamp < Math.max(1582844213530, timestamp)
+//   );
 
 // const getItem = (key) =>
 //   asyncPipe(
@@ -73,7 +72,6 @@ const shouldRefetch = (key) =>
 // export const getFeedback = () => getItem(keys.feedback);
 // export const getSchedule = () => getItem(keys.schedule);
 export const getSelections = () => getItemFromStorage(keys.selections);
-
 export const hashBreakout = ({ day, time } = {}) => `<${day}><${time}>`;
 
 export const selectOrUnselectBreakout = (select, { day, time, room }) =>

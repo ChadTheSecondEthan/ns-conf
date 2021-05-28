@@ -20,11 +20,11 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.northstarlds.conference",
+      "bundleIdentifier": "com.fisherappstudios.nsconf",
       "buildNumber": "1.0.1"
     },
     "android": {
-      "package": "com.northstarlds.conference",
+      "package": "com.fisherappstudios.nsconf",
       "versionCode": 1,
       "permissions": []
     }
