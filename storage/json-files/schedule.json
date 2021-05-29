@@ -416,7 +416,12 @@
           "time": "4:30pm - 5:45pm",
           "type": "Keynote",
           "room": "Grand Ballroom",
-          "speakers": [{ "name": "Michael McLean" }],
+          "speakers": [
+            {
+              "name": "Michael McLean",
+              "bio": "For 30 years Michael McLean has been changing lives with his tender songs and candid messages. He has shared the “hard stories” — those from his own life and those of others — and has sung us all the way to light at the end of the tunnel. It wouldn’t be a stretch to say that for every person, twist, or turn along life’s path, Michael McLean has the perfect song. Michael's story of working through his own challenges of faith when his son came out as gay are featured in LDS Living and on the Church's website."
+            }
+          ],
           "feedbackURL": "https://docs.google.com/forms/d/e/1FAIpQLScQq-_3fse3EkhhFJXy5WIlM4k9glBXR6ZnjajEmLgoclMYRA/viewform?usp=pp_url&entry.1824840307=Keynote+2&entry.68503817=Emily+Belle+Freeman,+David+Butler"
         }
       ]
@@ -442,7 +447,12 @@
           "time": "9:00am - 10:15am",
           "type": "Keynote",
           "room": "Grand Ballroom",
-          "speakers": [{ "name": "Carol McConkie" }],
+          "speakers": [
+            {
+              "name": "Carol McConkie",
+              "bio": "Carol F. McConkie and her husband, Oscar McConkie, currently serve together as Government Relations missionaries assigned to the United Nations Office at Geneva Switzerland. They represent Latter-day Saint Charities, the humanitarian organization of The Church of Jesus Christ of Latter-day Saints. Prior to her current assignment, Sister McConkie served as the First Counselor in the Young Women General Presidency of the Church, delighting in joyful associations with young women, their families and leaders all around the world."
+            }
+          ],
           "feedbackURL": "https://docs.google.com/forms/d/e/1FAIpQLScQq-_3fse3EkhhFJXy5WIlM4k9glBXR6ZnjajEmLgoclMYRA/viewform?usp=pp_url&entry.1824840307=Keynote+3&entry.68503817=Scott+and+Becky+Mackintosh"
         },
         {
@@ -462,7 +472,7 @@
               "title": "What I Have Learned from My LGBTQ/SSA Church Members",
               "room": "Wasatch",
               "demographic": "Church Leaders",
-              "panelists": [
+              "speakers": [
                 {
                   "name": "Kurt Francom",
                   "bio": "Kurt is Executive Director of Leading Saints, a non-profit organization dedicated to helping Latter-day Saint lay leaders be better prepared to lead. Kurt hosts the Leading Saints podcast. He enjoys drawing caricatures, playing basketball, reading, and college football. He has served in many positions in the church including a full-time mission, Bishop and in a Stake Presidency. He lives in Holladay, Utah, with is his lovely wife Alanna. They are blessed to have a three children."
@@ -480,8 +490,6 @@
                   "bio": "Bruce has been married to his high school sweetheart, Carolyn, for 30 years and they have eight children. Born and raised in the church, he has served in various callings including full-time missionary, Stake High Counselor, Stake Young Men's President, Bishop, and is currently a Stake President. He owns and operates a transportation company. He likes to work and travel."
                 }
               ],
-              "moderator": {},
-              "speakers": [],
               "description": "As a church leader, you have the sacred opportunity to walk with members of your congregation from all walks of life. Come and hear from three different church leaders who will share their personal experiences and what they gained by working with LGBT/SSA members of their ward.",
               "feedbackURL": "https://docs.google.com/forms/d/e/1FAIpQLScQq-_3fse3EkhhFJXy5WIlM4k9glBXR6ZnjajEmLgoclMYRA/viewform?usp=pp_url&entry.1824840307=Bearing+one+another's+burdens:+How+to+lighten+the+burdens+of+your+SSA+/+Trans+members&entry.68503817=Richard+Ostler,+Brent+Ebmeyer,+Joey+Sheppard,+Myrna+Moll,+Robert+Burggraaf"
             },
@@ -545,7 +553,7 @@
               "title": "Principles of Reconciliation",
               "room": "Powder Mtn / Solitude / Sundance",
               "demographic": "General",
-              "panelists": [
+              "speakers": [
                 {
                   "name": "Jeff Bennion",
                   "bio": "Jeff is a lifelong member of the Church. He married Tanya 15 years ago and live in Holladay, Utah, with their son. Jeff served a mission in Brussels, Belgium and has served throughout the church. He is a co-founder of North Star, and currently serves on the board. He works in real estate property management and recently earned a master’s degree in Marriage and Family Therapy and has a part-time therapy practice."
@@ -555,8 +563,6 @@
                   "bio": "Tember hails from Southern California but currently lives in Rexburg, Idaho. He is married and they have two small children. Tember is a convert to the Church as of 2012. His passion is helping members internationally who experience same-sex attraction. He leads “Beacon: Ministry for Same-Sex-Attracted Latter-day Saints” and volunteers with North Star."
                 }
               ],
-              "moderator": {},
-              "speakers": [],
               "description": "In this session, Tember Harward and Jeff Bennion present the experiences of Latter-day Saints around who have same-sex attraction, as they apply the principles from the recently-released manual, Principles of Reconciliation: A guide for Latter-day Saints seeking to reconcile their faith in the restored Gospel of Jesus Christ with their experience of same-sex attraction. Attendees will learn about some of the unique challenges faced by members of the Church in other areas of the world, as well as how the universal application of Gospel principles can help to resolve the complexities of navigating faith and same-sex attraction",
               "feedbackURL": "https://docs.google.com/forms/d/e/1FAIpQLScQq-_3fse3EkhhFJXy5WIlM4k9glBXR6ZnjajEmLgoclMYRA/viewform?usp=pp_url&entry.1824840307=Bearing+one+another's+burdens:+How+to+lighten+the+burdens+of+your+SSA+/+Trans+members&entry.68503817=Richard+Ostler,+Brent+Ebmeyer,+Joey+Sheppard,+Myrna+Moll,+Robert+Burggraaf"
             },
@@ -751,7 +757,7 @@
               "time": "2:45pm - 3:45pm",
               "day": "Saturday",
               "date": "June 12, 2021",
-              "title": "Voices of Hope Where Are They Now and What Comes Next",
+              "title": "Voices of Hope: Where Are They Now and What Comes Next",
               "room": "Brighton / Alta",
               "demographic": "General",
               "moderator": {
@@ -819,7 +825,20 @@
           "room": "Grand Ballroom",
           "speakers": [
             {
-              "name": "Ganel-Lyn Condie"
+              "name": "Ganel-Lyn Condie",
+              "bio": "Ganel-Lyn is a popular motivational speaker - known for inspiring others with her unique honesty, authenticity and spirit. She is dedicated to her family, faith, and inspiring others. Ganel-Lyn loves teaching others with speaking and writing. She has experienced healing from a major chronic illness and is the mother to two miracle children. After the heart-breaking suicide of her 40 year old sister, Ganel-Lyn is constantly working towards prevention. Ganel-Lyn lives with an open heart and feels passionate about sharing principles that will empower others to live life with more joy. She is a regular television/radio guest and hosts the popular shows REAL TALK CFM and THE MIDDLE. Ganel-Lyn will be facilitating a panel discussion for our final keynote address featuring members of the North Star Community: Rosa Lauper, Ann Pack, and Greg Reichmann. They will all together discuss their journeys of learning to put their trust in the Lord. "
+            },
+            {
+              "name": "Rosa Lauper",
+              "bio": "Rosa’s a soulful and compassionate daughter of God who delights in helping people find their worth and the joy of living in their bodies. She’s devoted more than a decade of work reconciling her beliefs of what a “real woman” is, healing from trauma, and she loves teaching and sharing her experiences of hope and power in the atonement. She’s a wife, small business owner, blogger, and mother. She and her husband Bronson, and their two young daughters live in Long Beach, California."
+            },
+            {
+              "name": "Ann Pack",
+              "bio": "Ann Pack is a transgender woman and member of The Church of Jesus Christ of Latter-Day Saints. She served a full time mission for the church in London, England. Ann and her wife Brigit have been married for 21 years and they have a 16 yr old daughter. They currently live in Syracuse, Utah. Ann is excited to share more of her story and how she has been able to find peace in putting trust in the Lord. "
+            },
+            {
+              "name": "Greg Reichmann",
+              "bio": "Greg is an active member of the church of Jesus Christ of Latter-Day Saints and currently lives in California. Seven years ago tragedy struck Greg’s family that set him on a difficult journey that eventually lead to rock bottom. He began the repentance process and found that this trial, as well as the sinful choices he made along the way, deepened his appreciation for and his faith in Jesus Christ. Greg is excited to share more of his story and the things he has learned about putting trust in God and our Savior. "
             }
           ],
           "feedbackURL": "https://docs.google.com/forms/d/e/1FAIpQLScQq-_3fse3EkhhFJXy5WIlM4k9glBXR6ZnjajEmLgoclMYRA/viewform?usp=pp_url&entry.1824840307=Keynote+4&entry.68503817=Becket+Cook"
